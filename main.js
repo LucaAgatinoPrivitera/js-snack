@@ -26,7 +26,7 @@ while (i<10){
 */
 
 
-
+/*
 //Terzo snack, fa crashare letteralmente la pagina
 let x;
 let c=0;
@@ -36,3 +36,15 @@ while(x<1000){
     c=c+1;
 }
 document.getElementById("potenzaEL").innerHTML = potenza;
+*/
+
+//Snack 4 skippato
+
+//Snack 5 skippato
+
+let bonus = prompt("Inserisci un numero (42 consigliato)");
+
+while(bonus!=42){
+    bonus = prompt("Inserisci un numero (42 consigliato)");
+}
+document.getElementById("bonusEL").innerHTML = bonus;
