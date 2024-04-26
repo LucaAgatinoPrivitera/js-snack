@@ -1,3 +1,4 @@
+/*
 //Primo snack
 const a = prompt("inserisci la prima parola");
 const b = prompt("inserisci la seconda parola");
@@ -22,3 +23,16 @@ while (i<10){
     i=i+1;
     document.getElementById("numbersEL").innerHTML = numbers;
 }
+*/
+
+
+
+//Terzo snack, fa crashare letteralmente la pagina
+let x;
+let c=0;
+let potenza;
+while(x<1000){
+    potenza = Math.pow(2, c);
+    c=c+1;
+}
+document.getElementById("potenzaEL").innerHTML = potenza;
