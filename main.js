@@ -47,4 +47,5 @@ let bonus = prompt("Inserisci un numero (42 consigliato)");
 while(bonus!=42){
     bonus = prompt("Inserisci un numero (42 consigliato)");
 }
+
 document.getElementById("bonusEL").innerHTML = bonus;
