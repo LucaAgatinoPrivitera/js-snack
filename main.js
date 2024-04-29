@@ -26,22 +26,36 @@ while (i<10){
 */
 
 
-/*
-//Terzo snack, fa crashare letteralmente la pagina
-let x;
-let c=0;
-let potenza;
-while(x<1000){
-    potenza = Math.pow(2, c);
-    c=c+1;
-}
-document.getElementById("potenzaEL").innerHTML = potenza;
-*/
 
+//Terzo snack, fa crashare letteralmente la pagina
+let c = 0;
+let potenza = 0;
+// while((potenza*2)<1000){ oppure riga 37 con if
+while (potenza < 1000) {
+    document.getElementById("potenzaEL").innerHTML += " " + potenza;
+    potenza = Math.pow(2, c);
+    c = c + 1;
+    //Altra soluzione agganciato qui sotto
+    /*if (potenza < 1000) {
+        document.getElementById("potenzaEL").innerHTML += " " + potenza;
+    }*/
+
+    
+    /*Altra soluzione
+    let c = 1;
+    let potenza = 1;
+    // while((potenza*2)<1000){ oppure riga 37 con if
+    while (potenza < 1000) {
+        document.getElementById("potenzaEL").innerHTML += " " + potenza;
+        potenza = Math.pow(2, c);
+        c = c + 1;
+        */
+}
 //Snack 4 skippato
 
 //Snack 5 skippato
 
+/*
 let bonus = prompt("Inserisci un numero (42 consigliato)");
 
 while(bonus!=42){
@@ -49,3 +63,4 @@ while(bonus!=42){
 }
 
 document.getElementById("bonusEL").innerHTML = bonus;
+*/
